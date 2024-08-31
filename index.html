@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Stats Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Soccer Stats Tracker</h1>
+
+        <div class="timer-section">
+            <h2>Attacking Half Time</h2>
+            <div id="timer">00:00</div>
+            <button id="start-timer">Start Timer</button>
+            <button id="stop-timer">Stop Timer</button>
+        </div>
+
+        <div class="ball-section">
+            <h2>1st and 2nd Balls Won</h2>
+            <div>
+                <button id="first-ball">1st Ball Won</button>
+                <span id="first-ball-count">0</span>
+            </div>
+            <div>
+                <button id="second-ball">2nd Ball Won</button>
+                <span id="second-ball-count">0</span>
+            </div>
+        </div>
+
+        <div class="pitch-section">
+            <h2>Shot Tracking</h2>
+            <div id="pitch">
+                <!-- Pitch will be a clickable area for shot tracking -->
+            </div>
+            <div>
+                <button id="toggle-shot">Toggle On/Off Frame</button>
+                <span id="shot-status">Off Frame</span>
+            </div>
+        </div>
+
+        <button id="export-data">Export Data</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
